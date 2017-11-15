@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="sumApp" lang="en">
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="app.js"></script> 
+        <script src="sum.js"></script>
+
+    </head >
+    <body ng-controller= "sum" >
+    <h3>  first number  <input type="number" ng-model="num1"></h3>
+    <h3>  seconed number  <input type="number" ng-model="num2">  </h3>
+    <h3>The output </h3>
+
+<div >
+{{num1}} * {{num2}} = {{totalMulti()}} <br>
+{{num1}} + {{num2}} = {{totalPlus()}} <br>
+ {{num1}} - {{num2}} =  {{totalminus()}} <br>
+ {{num1}} / {{num2}} =  {{totalDiv}} <br>
+</div>
+    </body>
+</html>
